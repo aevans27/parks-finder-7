@@ -1,0 +1,10 @@
+<h1>State Parks</h1>
+<h2>Total Parks: <%= @results.count %></h2>
+<% @results.each do |result| %>
+  <ul class="park_result">
+  <li>Name: <%= result.name %></li>
+  <li>Description: <%= result.description %></li>
+  <li>Direction: <%= result.directions %></li>
+  <li>Hours: <%= result.hours %></li>
+</ul>
+<% end %>
